@@ -1,5 +1,7 @@
-@use 'abstracts';
-@use 'base';
-@use 'components';
-@use 'layout';
-@use 'pages';
+@use 'base/base';
+@use 'base/reset';
+@use 'components/buttons';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'pages/aboutus';
+@use 'pages/contact';

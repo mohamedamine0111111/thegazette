@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header class="header">
         <div class="header__img">
-          <img src="http://cepegra-labs.be/fullstack/mohamed/thegazette/assets/logo.png" alt="Logo The gazette">
+          <a href="index.html"><img src="http://cepegra-labs.be/fullstack/mohamed/thegazette/assets/logo.png" alt="Logo The gazette"></a>
         </div>
         <button class="header__button">
           <span class="header__button--burger">
@@ -36,7 +37,70 @@
         </div>
       </header>
       <main>
-        <!-- A faire -->
+        <section class="section1__contact">
+            <div class="section1__contact--txt">
+              <h2 class="section1__contact--txt--title">Contact</h2>
+              <span class="section1__contact--txt--date">28 November 2017</span>
+            </div>
+        </section>
+        <section class="section2__contact">
+            <div class="section2__contact--large">
+                <h2 class="section2__contact--large--title">
+                    address
+                </h2>
+                <div class="section2__contact--large--hr">
+
+                </div>
+                <form class="section2__contact--large--forms" action="#" method="POST">
+                    <div class="section2__contact--large--form">
+                      <input 
+                         class="section2__contact--large--form--input"
+                         type="text" 
+                         name="fullname" 
+                         placeholder="Enter your full name" 
+                         >
+                    </div>
+                
+                    <div class="section2__contact--large--form">
+                      <input 
+                         class="section2__contact--large--form--input"
+                         type="email" 
+                         name="email" 
+                         placeholder="Enter your email" 
+                        >
+                    </div>
+                
+                    <div class="section2__contact--large--form">
+                      <textarea 
+                         class="section2__contact--large--form--textarea" 
+                         name="message" 
+                         placeholder="Enter your message" 
+                         rows="5" >
+                       </textarea>
+                    </div>
+                
+                    <div class="section2__contact--large--form">
+                      <button class="section2__contact--large--form--button" type="submit">Submit</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="section2__contact--small">
+                <div class="section2__contact--small--adresse">
+                    <h2 class="section2__contact--small--adresse--title">adress</h2>
+                    <p class="section2__contact--small--adresse--txt">Address: 1635 Franklin Street</p>
+                    <p class="section2__contact--small--adresse--txt">City / State: Montgomery, AL 36104</p>
+                    <p class="section2__contact--small--adresse--txt">Phone: 126-632-2345</p>
+                </div>
+                <div class="section2__contact--small--phone">
+                    <h2 class="section2__contact--small--phone--title">phone</h2>
+                    <p class="section2__contact--small--phone--txt">Phone #1: 126-632-2345</p>
+                    <p class="section2__contact--small--phone--txt">Phone #2: 126-632-2345</p>
+                    <p class="section2__contact--small--phone--txt">Phone #3: 126-632-2345</p>
+                    <p class="section2__contact--small--phone--txt">Phone #4 126-632-2345</p>
+                </div>
+
+            </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__nav">
