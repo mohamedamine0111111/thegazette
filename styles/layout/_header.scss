@@ -1,6 +1,88 @@
 .header{
-    background-color: rgb(56, 150, 98);
+    background-color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:0.5rem;
+    position:relative;
 }
 .header__img{
-    width: 50px;
+    width:200px;
+    padding:1rem;
+    position:absolute;
+    top:2em;
+    left: 0.7rem;
+    object-fit: cover;
+    object-position: center;
+}
+// .header__hr{
+//     border:1px solid rgba(0, 0, 0, 0.02);
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     width: 100%;
+// }
+.header__button {
+    width: 6.25rem;
+    background-color:rgb(237, 51, 51);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    padding:0.5rem;
+    border-radius:0.3rem;
+    position:absolute;
+    left:1.8rem;
+    bottom:1rem;
+}
+.header__button--burger{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.header__button--burger>div {
+    width:25px;
+    height:2px;
+    background:white;
+}
+.header__nav{
+    display: none;
+}
+.header__loop{
+    display: none;
+}
+@media (min-width: 980px) {
+    .header__img{
+        width: 18.75rem;
+        left: 4rem; 
+    }
+    .header__button {
+        display: none;
+    }
+    .header__navloop{
+        display: flex;
+        justify-content: center;
+    }
+    .header__nav{
+        display: flex;
+        font-weight: 500;
+        font-size:1.2rem;
+        position: absolute;
+        left: 5rem;
+        bottom: 1rem;
+    }
+    .header__nav nav >a{
+        padding: 0.3rem;
+    }
+    .header__nav nav >a:hover{
+        color: red;
+        transition: .3 all ease-in-out;
+    }
+    .header__loop{
+        display: block;
+        position: absolute;
+        right: 4rem;
+        bottom: 1rem;
+    }
 }
