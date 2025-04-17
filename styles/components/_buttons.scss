@@ -15,3 +15,43 @@
     border-radius: 0.1rem;
 }
 
+/* ======================
+   Boutton Section 2 - 
+====================== */
+
+.section2__bottom--button{
+    border: 0.05rem solid black;
+    padding: 0.6rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    width: fit-content;
+    align-self: start;
+    transition: all 0.3s ease-in-out;
+}
+.section2__bottom--button:hover{
+    color: red;
+    border-color: red;
+    transition: all 0.3s ease-in-out;
+
+}
+@media (min-width:950px){
+    .section2__redbtn{
+        align-self: start;
+    }
+    .section2__small--subcribe--form .subscribe-btn {
+        width: 100%;
+        background-color: red;
+        color: white;
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        border-radius:0.05rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .section2__small--subcribe--form .subscribe-btn:hover {
+        background-color: #cc0000;
+      }
+}
+
+
